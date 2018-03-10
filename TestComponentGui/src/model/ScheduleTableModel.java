@@ -34,7 +34,7 @@ public class ScheduleTableModel extends DefaultTableModel {
 		super.addRow(arg0);
 		Event event = eventFactory.getEvent((arg0[arg0.length - 1]).toString());
 		event.setTitle(arg0[0].toString());
-		event.setDescription(arg0[1].toString());
+		//event.setDescription(arg0[1].toString());
 		event.setStartActivity((LocalDateTime) arg0[2]);
 		event.setEndActivity((LocalDateTime) arg0[3]);
 		schedule.add(event);
