@@ -7,7 +7,6 @@ import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 
-import import_export_impl.SheduleImportExportJsonImplementation;
 import model.Event;
 import model.Schedule;
 import model.ScheduleTableModel;

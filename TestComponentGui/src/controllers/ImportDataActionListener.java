@@ -6,8 +6,7 @@ import java.io.IOException;
 
 import javax.swing.JFileChooser;
 
-import exceptions.InvalidSheduleExcepiton;
-import import_export_impl.SheduleImportExportJsonImplementation;
+import importexport.impl.SheduleImportExportJsonImplementation;
 import main.App;
 import model.Event;
 import model.Schedule;
@@ -30,7 +29,7 @@ public class ImportDataActionListener implements ActionListener {
 		if (returnVal == JFileChooser.APPROVE_OPTION) {
 			Schedule schedule = null;
 			try {
-				schedule = this.exportJsonImplementation.importShedule(chooser.getSelectedFile());
+				schedule = this.exportJsonImplementation.importSchedule(chooser.getSelectedFile());
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
